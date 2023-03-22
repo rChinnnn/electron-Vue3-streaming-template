@@ -1,15 +1,21 @@
 {
   "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
     "module": "commonjs",
-    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
     "sourceMap": true,
-    "outDir": "dist",
-    "baseUrl": ".",
-    "paths": {
-      "*": ["node_modules/*"]
-    }
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true,
+    "outDir": "dist/electron"
   },
-  "include": [
-    "src/**/*", "renderer.ts"
-  ]
+  "include": ["src/electron/**/*"],
+  "references": [{
+    "path": "./tsconfig.node.json"
+  }]
 }
