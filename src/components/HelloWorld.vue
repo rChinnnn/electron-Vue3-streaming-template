@@ -10,36 +10,15 @@ const { count } = storeToRefs(useCounterStore());
 <template>
   <div>
     <h1>{{ msg }}</h1>
-
-    <p>
-      Recommended IDE setup:
-      <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
-      +
-      <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-    </p>
-
-    <p>See <code>README.md</code> for more information.</p>
-
-    <p>
-      <a href="https://vitejs.dev/guide/features.html" target="_blank">
-        Vite Docs
-      </a>
-      |
-      <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
-    </p>
-
-    <button type="button" @click="count++">count is: {{ count }}</button>
-    <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test hot module replacement.
-    </p>
     <p>
       <!-- use the router-link component for navigation. -->
       <!-- specify the link by passing the `to` prop. -->
       <!-- `<router-link>` will render an `<a>` tag with the correct `href` attribute -->
       <router-link to="/home" class="routerlink">Go to Home</router-link>
       <router-link to="/about" class="routerlink">Go to About</router-link>
+      <router-link to="/streaming" class="routerlink">Go to Streaming</router-link>
     </p>
+    <button type="button" @click="count++">count is: {{ count }}</button>
     <!-- route outlet -->
     <!-- component matched by the route will render here -->
     <router-view />

@@ -51,8 +51,10 @@
   },
   "dependencies": {
     "@types/node-media-server": "^2.3.3",
+    "fluent-ffmpeg": "^2.1.2",
     "node-media-server": "^2.5.0",
-    "vue": "^3.2.25"
+    "vue": "^3.2.25",
+    "webrtc-adapter": "^8.2.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
